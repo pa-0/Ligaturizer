@@ -322,7 +322,7 @@ def parse_args():
              " all copied character glyphs; a value of 2 effectively disables"
              " character glyph scaling.")
     parser.add_argument("--addsuffix",
-        type=str, default="Lig",
+        type=str, default="",
         help="String to addsuffix the name of the generated font with.")
     parser.add_argument("--output-name",
         type=str, default="",

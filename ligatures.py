@@ -26,30 +26,30 @@ ligatures = [
     ## These are traditional (i.e. present in most variable-width fonts)
     ## aesthetic ligatures. They are commented out here so that they don't
     ## overwrite similar ligatures present in the destination font.
-    # {   # Fl
-    #     'chars': ['F', 'l'],
-    #     'firacode_ligature_name': 'F_l.liga',
-    # },
-    # {   # Tl
-    #     'chars': ['T', 'l'],
-    #     'firacode_ligature_name': 'T_l.liga',
-    # },
-    # {   # fi
-    #     'chars': ['f', 'i'],
-    #     'firacode_ligature_name': 'f_i.liga',
-    # },
-    # {   # fj
-    #     'chars': ['f', 'j'],
-    #     'firacode_ligature_name': 'f_j.liga',
-    # },
-    # {   # fl
-    #     'chars': ['f', 'l'],
-    #     'firacode_ligature_name': 'f_l.liga',
-    # },
-    # {   # ft
-    #     'chars': ['f', 't'],
-    #     'firacode_ligature_name': 'f_t.liga',
-    # },
+    {   # Fl
+        'chars': ['F', 'l'],
+        'firacode_ligature_name': 'F_l.liga',
+    },
+    {   # Tl
+        'chars': ['T', 'l'],
+        'firacode_ligature_name': 'T_l.liga',
+    },
+    {   # fi
+        'chars': ['f', 'i'],
+        'firacode_ligature_name': 'f_i.liga',
+    },
+    {   # fj
+        'chars': ['f', 'j'],
+        'firacode_ligature_name': 'f_j.liga',
+    },
+    {   # fl
+        'chars': ['f', 'l'],
+        'firacode_ligature_name': 'f_l.liga',
+    },
+    {   # ft
+        'chars': ['f', 't'],
+        'firacode_ligature_name': 'f_t.liga',
+    },
     ## Programming ligatures begin here.
     {   # &&
         'chars': ['ampersand', 'ampersand'],
@@ -249,7 +249,7 @@ ligatures = [
     },
     {   # >=
         'chars': ['greater', 'equal'],
-        'firacode_ligature_name': 'greater_equal.liga',
+        'firacode_ligature_name': 'greater_equal.ss02',
     },
     {   # >=>
         'chars': ['greater', 'equal', 'greater'],
@@ -365,7 +365,7 @@ ligatures = [
     },
     {   # <=
         'chars': ['less', 'equal'],
-        'firacode_ligature_name': 'less_equal.liga',
+        'firacode_ligature_name': 'less_equal.ss02',
     },
     {   # <=|
         'chars': ['less', 'equal', 'bar'],

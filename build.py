@@ -7,7 +7,7 @@
 #### User configurable settings ####
 
 # For the prefixed_fonts below, what word do we stick in front of the font name?
-LIGATURIZED_FONT_NAME_PREFIX = "Liga"
+LIGATURIZED_FONT_NAME_PREFIX = ""
 
 # Should we copy some individual punctuations characters like &, ~, and <>,
 # as well as ligatures? The full list is in ligatures.py.
@@ -29,22 +29,22 @@ OUTPUT_DIR = 'fonts/output/'
 # SIL OFL here either unless they haven't specified a Reserved Font Name.
 
 prefixed_fonts = [
-  # Apache 2.0 license
-  'fonts/codeface/fonts/cousine/*.ttf',
-  'fonts/codeface/fonts/droid-sans-mono/*.ttf',
-  'fonts/codeface/fonts/meslo/*.ttf',
-  'fonts/codeface/fonts/roboto-mono/*.ttf',
-
-  # MIT license
-  'fonts/codeface/fonts/dejavu-sans-mono/*.ttf',
-  'fonts/codeface/fonts/hack/*.ttf',
-
-  # SIL OFL with no Reserved Font Name
-  'fonts/codeface/fonts/edlo/*.ttf',
-  'fonts/codeface/fonts/inconsolata/*.ttf',
-  'fonts/spacemono/fonts/*.ttf',
-  'fonts/Montserrat/fonts/otf/*.otf',
-  'fonts/Montserrat/fonts/ttf/*.ttf',
+#  # Apache 2.0 license
+#  'fonts/codeface/fonts/cousine/*.ttf',
+#  'fonts/codeface/fonts/droid-sans-mono/*.ttf',
+#  'fonts/codeface/fonts/meslo/*.ttf',
+#  'fonts/codeface/fonts/roboto-mono/*.ttf',
+#
+#  # MIT license
+#  'fonts/codeface/fonts/dejavu-sans-mono/*.ttf',
+#  'fonts/codeface/fonts/hack/*.ttf',
+#
+#  # SIL OFL with no Reserved Font Name
+#  'fonts/codeface/fonts/edlo/*.ttf',
+#  'fonts/codeface/fonts/inconsolata/*.ttf',
+#  'fonts/spacemono/fonts/*.ttf',
+#  'fonts/Montserrat/fonts/otf/*.otf',
+#  'fonts/Montserrat/fonts/ttf/*.ttf',
 ]
 
 #### Fonts that need to be renamed. ####
