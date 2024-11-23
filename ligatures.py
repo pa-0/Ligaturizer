@@ -191,6 +191,10 @@ ligatures = [
         'chars': ['dollar', 'greater'],
         'firacode_ligature_name': 'dollar_greater.liga',
     },
+    {   # =~
+        'chars': ['equal', 'asciitilde'],
+        'firacode_ligature_name': 'equal_asciitilde.ss07',
+    },
     {   # =:=
         'chars': ['equal', 'colon', 'equal'],
         'firacode_ligature_name': 'equal_colon_equal.liga',
@@ -226,6 +230,10 @@ ligatures = [
     {   # =/=
         'chars': ['equal', 'slash', 'equal'],
         'firacode_ligature_name': 'equal_slash_equal.liga',
+    },
+    {   # !~
+        'chars': ['exclam', 'asciitilde'],
+        'firacode_ligature_name': 'exclam_asciitilde.ss07',
     },
     {   # !=
         'chars': ['exclam', 'equal'],

@@ -248,7 +248,7 @@ def update_font_metadata(font, new_name):
     replace_sfnt(font, 'WWS Family', new_name)
 
 def ligaturize_font(input_font_file, output_dir, ligature_font_file,
-                    output_name, addsuffix, **kwargs):
+                    output_name, prefix, **kwargs):
     font = fontforge.open(input_font_file)
 
     if not ligature_font_file:
@@ -258,8 +258,8 @@ def ligaturize_font(input_font_file, output_dir, ligature_font_file,
         name = output_name
     else:
         name = font.familyname
-    if addsuffix:
-        name = "%s %s" % (name, addsuffix)
+    if prefix:
+        name = "%s %s" % (prefix, name)
 
     update_font_metadata(font, name)
 
@@ -300,7 +300,7 @@ def parse_args():
     parser.add_argument("--output-dir",
         help="The directory to save the ligaturized font in. The actual filename"
              " will be automatically generated based on the input font name and"
-             " the --addsuffix and --output-name flags.")
+             " the --prefix and --output-name flags.")
     parser.add_argument("--ligature-font-file",
         type=str, default='', metavar='PATH',
         help="The file to copy ligatures from. If unspecified, ligaturize will"
@@ -321,9 +321,9 @@ def parse_args():
              " they are at least 10%% wider or narrower. A value of 0 will scale"
              " all copied character glyphs; a value of 2 effectively disables"
              " character glyph scaling.")
-    parser.add_argument("--addsuffix",
+    parser.add_argument("--prefix",
         type=str, default="",
-        help="String to addsuffix the name of the generated font with.")
+        help="String to prefix the name of the generated font with.")
     parser.add_argument("--output-name",
         type=str, default="",
         help="Name of the generated font. Completely replaces the original.")
