@@ -259,8 +259,8 @@ def ligaturize_font(input_font_file, output_dir, ligature_font_file,
     else:
         name = font.familyname
     if prefix:
-        name = "%s %s" % (prefix, name)
-
+        name = "%s %s" % (name, prefix)
+        #prefix var inherited from earlier repo => suffix var already used
     update_font_metadata(font, name)
 
     print('    ...using ligatures from %s' % ligature_font_file)
