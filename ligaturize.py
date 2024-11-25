@@ -27,18 +27,18 @@ def get_ligature_source(fontname):
     for weight in ['Bold', 'SemiBold', 'Retina', 'Medium', 'Regular', 'Light']:
         if fontname.endswith('-' + weight.lower()):
             # Exact match for one of the Fira Code weights
-            return 'lig/fonts/fira/distr/otf/FiraCode-%s.otf' % weight
+            return '/home/runner/work/ReaditMono-NF/ReaditMono-NF/lig/fonts/fira/distr/otf/FiraCode-%s.otf' % weight
     # No exact match. Guess that we want 'Bold' if the font name has 'bold' or
     # 'heavy' in it, and 'Regular' otherwise.
     if 'light' in fontname:
-        return 'lig/fonts/fira/distr/otf/FiraCode-Light.otf'
+        return '/home/runner/work/ReaditMono-NF/ReaditMono-NF/lig/fonts/fira/distr/otf/FiraCode-Light.otf'
     if 'medium' in fontname:
-        return 'lig/fonts/fira/distr/otf/FiraCode-Medium.otf'
+        return '/home/runner/work/ReaditMono-NF/ReaditMono-NF/lig/fonts/fira/distr/otf/FiraCode-Medium.otf'
     if 'semibold' in fontname:
-        return 'lig/fonts/fira/distr/otf/FiraCode-SemiBold.otf'
+        return '/home/runner/work/ReaditMono-NF/ReaditMono-NF/lig/fonts/fira/distr/otf/FiraCode-SemiBold.otf'
     if 'bold' in fontname or 'heavy' in fontname:
-        return 'lig/fonts/fira/distr/otf/FiraCode-Bold.otf'
-    return 'lig/fonts/fira/distr/otf/FiraCode-Regular.otf'
+        return '/home/runner/work/ReaditMono-NF/ReaditMono-NF/lig/fonts/fira/distr/otf/FiraCode-Bold.otf'
+    return '/home/runner/work/ReaditMono-NF/ReaditMono-NF/lig/fonts/fira/distr/otf/FiraCode-Regular.otf'
 
 class LigatureCreator(object):
 
